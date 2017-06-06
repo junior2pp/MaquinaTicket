@@ -55,3 +55,6 @@ func (t *Ticket) ImprimirTicket() {
 		fmt.Printf("Necesita %v centavos mas", (t.precio - t.balance))
 	}
 }
+func (t *Ticket) GetMaquinaInfo() (int, int, int, int) {
+	return t.precio, t.balance, t.total, t.contador
+}
